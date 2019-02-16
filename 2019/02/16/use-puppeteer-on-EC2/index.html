@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="testing,puppeteer,ec2,">
 
 
 
@@ -79,16 +79,22 @@
 
 
 
-<meta name="description" content="Start by being the best coder Developer : Create the future Engineer : Speak with data Programer : Show with magic code">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Darren.Lan">
-<meta property="og:url" content="https://lanlanlue.github.io/index.html">
+<meta name="description" content="##Headless Chrome Node API puppeteer可以當做一個UI測試的小工具，在Chrome中運行抓取網站內容，或是生成頁面的截圖及PDF，且對於SPA網頁可以抓取到 pre-rendered content。 建議使用 Node v7.6.0 以上版本 安裝 puppeteer 時會自動幫你載好 Chromium，在Windows 環境可以直接開始使用 1npm inst">
+<meta name="keywords" content="testing,puppeteer,ec2">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用GoogleChrome&#x2F;puppeteer在EC2上運作網頁截圖">
+<meta property="og:url" content="https://lanlanlue.github.io/2019/02/16/use-puppeteer-on-EC2/index.html">
 <meta property="og:site_name" content="Darren.Lan">
-<meta property="og:description" content="Start by being the best coder Developer : Create the future Engineer : Speak with data Programer : Show with magic code">
+<meta property="og:description" content="##Headless Chrome Node API puppeteer可以當做一個UI測試的小工具，在Chrome中運行抓取網站內容，或是生成頁面的截圖及PDF，且對於SPA網頁可以抓取到 pre-rendered content。 建議使用 Node v7.6.0 以上版本 安裝 puppeteer 時會自動幫你載好 Chromium，在Windows 環境可以直接開始使用 1npm inst">
 <meta property="og:locale" content="zh-tw">
+<meta property="og:image" content="https://lanlanlue.github.io/2019/02/16/images/puppeteer_1.png">
+<meta property="og:image" content="https://lanlanlue.github.io/2019/02/16/images/puppeteer_2.png">
+<meta property="og:image" content="https://lanlanlue.github.io/2019/02/16/images/puppeteer_2.png">
+<meta property="og:updated_time" content="2019-02-16T10:05:56.108Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Darren.Lan">
-<meta name="twitter:description" content="Start by being the best coder Developer : Create the future Engineer : Speak with data Programer : Show with magic code">
+<meta name="twitter:title" content="使用GoogleChrome&#x2F;puppeteer在EC2上運作網頁截圖">
+<meta name="twitter:description" content="##Headless Chrome Node API puppeteer可以當做一個UI測試的小工具，在Chrome中運行抓取網站內容，或是生成頁面的截圖及PDF，且對於SPA網頁可以抓取到 pre-rendered content。 建議使用 Node v7.6.0 以上版本 安裝 puppeteer 時會自動幫你載好 Chromium，在Windows 環境可以直接開始使用 1npm inst">
+<meta name="twitter:image" content="https://lanlanlue.github.io/2019/02/16/images/puppeteer_1.png">
 
 
 
@@ -118,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="https://lanlanlue.github.io/">
+  <link rel="canonical" href="https://lanlanlue.github.io/2019/02/16/use-puppeteer-on-EC2/">
 
 
 
 
 
-  <title>Darren.Lan</title>
+  <title>使用GoogleChrome/puppeteer在EC2上運作網頁截圖 | Darren.Lan</title>
   
 <script>
   window.fbAsyncInit = function() {
@@ -161,8 +167,7 @@
     
   
 
-  <div class="container sidebar-position-right 
-  page-home">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -265,9 +270,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -297,9 +302,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/02/16/use-puppeteer-on-EC2/" itemprop="url">使用GoogleChrome/puppeteer在EC2上運作網頁截圖</a></h1>
+          <h1 class="post-title" itemprop="name headline">使用GoogleChrome/puppeteer在EC2上運作網頁截圖</h1>
         
 
         <div class="post-meta">
@@ -381,9 +384,7 @@
       
 
       
-        
-          
-            <p>##Headless Chrome Node API</p>
+        <p>##Headless Chrome Node API</p>
 <p><a href="https://github.com/GoogleChrome/puppeteer" target="_blank" rel="noopener">puppeteer</a>可以當做一個UI測試的小工具，在Chrome中運行抓取網站內容，或是生成頁面的截圖及PDF，且對於SPA網頁可以抓取到 pre-rendered content。</p>
 <p>建議使用 Node v7.6.0 以上版本</p>
 <p>安裝 puppeteer 時會自動幫你載好 Chromium，在Windows 環境可以直接開始使用</p>
@@ -425,8 +426,6 @@
 <p>EC2運行抓到的圖片長這樣… 中文字會被吃掉應該是編碼還需要調整</p>
 <p><img src="../images/puppeteer_2.png" alt="avatar"></p>
 
-          
-        
       
     </div>
     
@@ -441,650 +440,58 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://lanlanlue.github.io/2019/02/13/git-cheat-sheet-education/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Darren Lan">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Darren.Lan">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/02/13/git-cheat-sheet-education/" itemprop="url">git-cheat-sheet-education</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">發表於</span>
-              
-              <time title="創建於" itemprop="dateCreated datePublished" datetime="2019-02-13T00:01:34+08:00">
-                2019-02-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分類於</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/guide/" itemprop="url" rel="index">
-                    <span itemprop="name">guide</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/testing/" rel="tag"># testing</a>
           
-
+            <a href="/tags/puppeteer/" rel="tag"># puppeteer</a>
           
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2019/02/13/git-cheat-sheet-education/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count fb-comments-count" data-href="https://lanlanlue.github.io/2019/02/13/git-cheat-sheet-education/" itemprop="commentCount">0</span> comments
-                </a>
-              </span>
-            
+            <a href="/tags/ec2/" rel="tag"># ec2</a>
           
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <style>
-  #git-cheat-sheet-education-container {text-align: center;height: 100%;}
-  .button {color: #333;background-color: #fff;border-color: #ccc;font-size: 14px;font-weight: 400;border: 1px solid transparent;border-radius: 4px;cursor: pointer;line-height: 1.42857143;text-align: center;white-space: nowrap;vertical-align: middle;padding: 6px 12px;}
-  .info {padding: 20px;}
-  .error {font-weight: bold;font-size: 20px;padding: 20px;}
-</style>
-
-<p><div id="git-cheat-sheet-education-container"><div><button class="button">Click me to fullscreen the PDF</button></div><br>  <object data="/files/git-cheat-sheet-education.pdf" type="application/pdf" width="100%" height="500px"><br>      <embed src="/files/git-cheat-sheet-education.pdf"><br>        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/files/git-cheat-sheet-education.pdf">Download PDF</a>.</p><br>      <br>  </object><br></div></p>
-<script>
-  var button = document.querySelector('#git-cheat-sheet-education-container .button');
-  if(button) {
-    button.addEventListener('click', fullscreen);
-  }
-  // when you are in fullscreen, ESC and F11 may not be trigger by keydown listener. 
-  // so don't use it to detect exit fullscreen
-  document.addEventListener('keydown', function (e) {
-    console.log('key press' + e.keyCode);
-  });
-  // detect enter or exit fullscreen mode
-  document.addEventListener('webkitfullscreenchange', fullscreenChange);
-  document.addEventListener('mozfullscreenchange', fullscreenChange);
-  document.addEventListener('fullscreenchange', fullscreenChange);
-  document.addEventListener('MSFullscreenChange', fullscreenChange);
-  function fullscreen() {
-    // check if fullscreen mode is available
-    if (document.fullscreenEnabled || 
-      document.webkitFullscreenEnabled || 
-      document.mozFullScreenEnabled ||
-      document.msFullscreenEnabled) {
-      // which element will be fullscreen
-      var iframe = document.querySelector('#git-cheat-sheet-education-container object');
-      // Do fullscreen
-      if (iframe.requestFullscreen) {
-        iframe.requestFullscreen();
-      } else if (iframe.webkitRequestFullscreen) {
-        iframe.webkitRequestFullscreen();
-      } else if (iframe.mozRequestFullScreen) {
-        iframe.mozRequestFullScreen();
-      } else if (iframe.msRequestFullscreen) {
-        iframe.msRequestFullscreen();
-      }
-    }
-    else {
-      document.querySelector('.error').innerHTML = 'Your browser is not supported';
-    }
-  }
-  function fullscreenChange() {
-    if (document.fullscreenEnabled ||
-        document.webkitIsFullScreen || 
-        document.mozFullScreen ||
-        document.msFullscreenElement) {
-      console.log('enter fullscreen');
-    }
-    else {
-      console.log('exit fullscreen');
-    }
-    // force to reload iframe once to prevent the iframe source didn't care about trying to resize the window
-    // comment this line and you will see
-    var iframe = document.querySelector('iframe');
-    iframe.src = iframe.src;
-  }
-</script>
-
-<hr>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- github.io for Jekyll -->
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9603285949500141" data-ad-slot="3149748030" data-ad-format="auto" data-full-width-responsive="true"></ins>
-<script>var adsbygoogle = window.adsbygoogle || [];adsbygoogle.push({});</script>
-
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://lanlanlue.github.io/2019/02/08/gitmoji/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Darren Lan">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Darren.Lan">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/02/08/gitmoji/" itemprop="url">gitmoji</a></h1>
+        <div class="post-widgets">
         
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">發表於</span>
-              
-              <time title="創建於" itemprop="dateCreated datePublished" datetime="2019-02-08T01:45:04+08:00">
-                2019-02-08
-              </time>
+        
+          <div class="social-like">
             
 
             
-
+              <div class="fb_like">
+                <div class="fb-like" data-layout="button_count" data-share="true"></div>
+              </div>
             
-          </span>
+          </div>
+        
 
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分類於</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/Tools/" itemprop="url" rel="index">
-                    <span itemprop="name">Tools</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2019/02/08/gitmoji/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count fb-comments-count" data-href="https://lanlanlue.github.io/2019/02/08/gitmoji/" itemprop="commentCount">0</span> comments
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+        
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
       
       
 
       
-        
-          
-            <style>
-  #container {text-align: center;height: 100%;}
-  .button {color: #333;background-color: #fff;border-color: #ccc;font-size: 14px;font-weight: 400;border: 1px solid transparent;border-radius: 4px;cursor: pointer;line-height: 1.42857143;text-align: center;white-space: nowrap;vertical-align: middle;padding: 6px 12px;}
-  .info {padding: 20px;}
-  .error {font-weight: bold;font-size: 20px;padding: 20px;}
-</style>
-
-<p><div id="container"><div><button class="button">Click me to fullscreen the iframe</button></div><br>  <iframe allowfullscreen src="https://gitmoji.carloscuesta.me/" width="100%" height="500px" frameborder="0" scrolling="yes"></iframe><br></div></p>
-<script>
-  var button = document.querySelector('#container .button');
-  if(button) {
-    button.addEventListener('click', fullscreen);
-  }
-  // when you are in fullscreen, ESC and F11 may not be trigger by keydown listener. 
-  // so don't use it to detect exit fullscreen
-  document.addEventListener('keydown', function (e) {
-    console.log('key press' + e.keyCode);
-  });
-  // detect enter or exit fullscreen mode
-  document.addEventListener('webkitfullscreenchange', fullscreenChange);
-  document.addEventListener('mozfullscreenchange', fullscreenChange);
-  document.addEventListener('fullscreenchange', fullscreenChange);
-  document.addEventListener('MSFullscreenChange', fullscreenChange);
-  function fullscreen() {
-    // check if fullscreen mode is available
-    if (document.fullscreenEnabled || 
-      document.webkitFullscreenEnabled || 
-      document.mozFullScreenEnabled ||
-      document.msFullscreenEnabled) {
-      // which element will be fullscreen
-      var iframe = document.querySelector('#container iframe');
-      // Do fullscreen
-      if (iframe.requestFullscreen) {
-        iframe.requestFullscreen();
-      } else if (iframe.webkitRequestFullscreen) {
-        iframe.webkitRequestFullscreen();
-      } else if (iframe.mozRequestFullScreen) {
-        iframe.mozRequestFullScreen();
-      } else if (iframe.msRequestFullscreen) {
-        iframe.msRequestFullscreen();
-      }
-    }
-    else {
-      document.querySelector('.error').innerHTML = 'Your browser is not supported';
-    }
-  }
-  function fullscreenChange() {
-    if (document.fullscreenEnabled ||
-        document.webkitIsFullScreen || 
-        document.mozFullScreen ||
-        document.msFullscreenElement) {
-      console.log('enter fullscreen');
-    }
-    else {
-      console.log('exit fullscreen');
-    }
-    // force to reload iframe once to prevent the iframe source didn't care about trying to resize the window
-    // comment this line and you will see
-    var iframe = document.querySelector('iframe');
-    iframe.src = iframe.src;
-  }
-</script>
-
-<hr>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- github.io for Jekyll -->
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9603285949500141" data-ad-slot="3149748030" data-ad-format="auto" data-full-width-responsive="true"></ins>
-<script>var adsbygoogle = window.adsbygoogle || [];adsbygoogle.push({});</script>
-
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://lanlanlue.github.io/2019/02/01/hello-world/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Darren Lan">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Darren.Lan">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/02/01/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">發表於</span>
-              
-              <time title="創建於" itemprop="dateCreated datePublished" datetime="2019-02-01T00:00:00+08:00">
-                2019-02-01
-              </time>
+              <a href="/2019/02/13/git-cheat-sheet-education/" rel="next" title="git-cheat-sheet-education">
+                <i class="fa fa-chevron-left"></i> git-cheat-sheet-education
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2019/02/01/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count fb-comments-count" data-href="https://lanlanlue.github.io/2019/02/01/hello-world/" itemprop="commentCount">0</span> comments
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="npm-install"><a href="#npm-install" class="headerlink" title="npm install"></a>npm install</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<table>
-<thead>
-<tr>
-<th>選項</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>-p, –port</td>
-<td>覆蓋連接埠設定</td>
-</tr>
-<tr>
-<td>-s, –static</td>
-<td>只使用靜態檔案</td>
-</tr>
-<tr>
-<td>-l, –log</td>
-<td>啟動記錄器，或覆蓋記錄格式</td>
-</tr>
-</tbody>
-</table>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="new-article"><a href="#new-article" class="headerlink" title="new article"></a>new article</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="publish"><a href="#publish" class="headerlink" title="publish"></a>publish</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo publish [layout] &lt;filename&gt;</span><br></pre></td></tr></table></figure>
-<p>發表草稿。</p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<table>
-<thead>
-<tr>
-<th>選項</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>-d, –deploy</td>
-<td>產生完成即部署網站</td>
-</tr>
-<tr>
-<td>-w, –watch</td>
-<td>監看檔案變更</td>
-</tr>
-</tbody>
-</table>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<table>
-<thead>
-<tr>
-<th>選項</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>-g, –generate</td>
-<td>部署網站前先產生靜態檔案</td>
-</tr>
-</tbody>
-</table>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -1094,10 +501,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -1105,6 +513,16 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div class="fb-comments" data-href="https://lanlanlue.github.io/2019/02/16/use-puppeteer-on-EC2/" data-numposts="10" data-width="100%" data-colorscheme="dark">
+      </div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -1125,8 +543,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目錄
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            本站概覽
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -1188,6 +615,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#EC2"><span class="nav-number">1.</span> <span class="nav-text">EC2</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Install-ATK-from-CentOS-7"><span class="nav-number">1.1.</span> <span class="nav-text">Install ATK from CentOS 7</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Install-GTK-from-fedora-20"><span class="nav-number">1.2.</span> <span class="nav-text">Install GTK from fedora 20</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Install-Gdk-Pixbuf-from-fedora-16"><span class="nav-number">1.3.</span> <span class="nav-text">Install Gdk-Pixbuf from fedora 16</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#順利的話這邊就結束了"><span class="nav-number">1.4.</span> <span class="nav-text">順利的話這邊就結束了</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1329,6 +772,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
