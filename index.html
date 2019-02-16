@@ -383,8 +383,7 @@
       
         
           
-            <p>##Headless Chrome Node API</p>
-<p><a href="https://github.com/GoogleChrome/puppeteer" target="_blank" rel="noopener">puppeteer</a>可以當做一個UI測試的小工具，在Chrome中運行抓取網站內容，或是生成頁面的截圖及PDF，且對於SPA網頁可以抓取到 pre-rendered content。</p>
+            <h2 id="Headless-Chrome-Node-API"><a href="#Headless-Chrome-Node-API" class="headerlink" title="Headless Chrome Node API"></a>Headless Chrome Node API</h2><p><a href="https://github.com/GoogleChrome/puppeteer" target="_blank" rel="noopener">puppeteer</a>可以當做一個UI測試的小工具，在Chrome中運行抓取網站內容，或是生成頁面的截圖及PDF，且對於SPA網頁可以抓取到 pre-rendered content。</p>
 <p>建議使用 Node v7.6.0 以上版本</p>
 <p>安裝 puppeteer 時會自動幫你載好 Chromium，在Windows 環境可以直接開始使用</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install puppeteer</span><br></pre></td></tr></table></figure>
@@ -396,18 +395,17 @@
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node index.js</span><br></pre></td></tr></table></figure>
 <p>資料夾目錄底下就會多一個example.png的圖片檔<br>↓長這樣<br><img src="../images/puppeteer_2.png" alt="avatar"></p>
 <h2 id="EC2"><a href="#EC2" class="headerlink" title="EC2"></a>EC2</h2><p>本機測試好後，接下來把東西丟到EC2跑看看，沒辦法正常運行。</p>
-<p>Linux環境就會比較麻煩一點，需要安裝其他東西 可以參考這篇</p>
+<p>Linux環境就會比較麻煩一點，需要安裝其他東西 <a href="https://medium.com/mockingbot/run-puppeteer-chrome-headless-on-ec2-amazon-linux-ami-6c9c6a17bee6" target="_blank" rel="noopener">可以參考這篇</a></p>
 <p>先檢查缺了哪些東西</p>
 <p>進到puppeteer目錄底下</p>
-<p>cd /node_modules/puppeteer/.local-chromium/linux-609904/chrome-linux/</p>
-<p>注意，linux-609904會因為版本不同而有差異</p>
-<p>在這目錄下執行</p>
-<p>ldd chrome | grep not</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /node_modules/puppeteer/.local-chromium/linux-609904/chrome-linux/</span><br></pre></td></tr></table></figure>
+<h3 id="注意，linux-609904會因為版本不同而有差異"><a href="#注意，linux-609904會因為版本不同而有差異" class="headerlink" title="注意，linux-609904會因為版本不同而有差異"></a>注意，linux-609904會因為版本不同而有差異</h3><p>在這目錄下執行</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ldd chrome | grep not</span><br></pre></td></tr></table></figure>
 <p>會顯示很多 <em>**</em> =&gt; not found 缺少的東西</p>
 <p>先安裝以下</p>
-<p>sudo yum install cups-libs dbus-glib libXrandr libXcursor libXinerama cairo cairo-gobject pango</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo yum install cups-libs dbus-glib libXrandr libXcursor libXinerama cairo cairo-gobject pango</span><br></pre></td></tr></table></figure>
 <p>再查看一次</p>
-<p>ldd chrome | grep not</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ldd chrome | grep not</span><br></pre></td></tr></table></figure>
 <p>應該還是會有不少個缺少的</p>
 <p>原作那篇指出因為Amazon Linux少一些gtk內建的東西，需要從別的地方借用</p>
 <p>以下都裝一裝</p>
